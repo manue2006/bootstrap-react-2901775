@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOC de Mitología Griega</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffffff, #ffffff, #ffff);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.5) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(252, 247, 248, 0.3);
+        }
+
+        .module-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: rgba(128, 0, 32, 0.2) !important;
+            border: 1px solid rgba(128, 0, 32, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(128, 0, 32, 0.5);
+            background: rgba(19, 18, 18, 0.3) !important;
+        }
+
+        .module-card img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 400px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(128, 0, 32, 0.3);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 12px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1,
+        h3 {
+            color: #9b1111;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 600;
+        }
+
+        .card-title {
+            color: #9b1111;
+            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+
+        .text-muted {
+            color: #9b1111 !important;
+        }
+
+        .form-control {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(128, 0, 32, 0.3);
+            color: white;
+        }
+
+        .form-control:focus {
+            background: rgba(0, 0, 0, 0.4);
+            border-color: rgba(128, 0, 32, 0.5);
+            color: white;
+            box-shadow: 0 0 0 0.2rem rgba(128, 0, 32, 0.2);
+        }
+
+        .form-control::placeholder {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        .card-body {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 1rem;
+            border-top: 1px solid rgba(128, 0, 32, 0.3);
+        }
+
+        .btn-outline-light:hover {
+            background-color: rgba(128, 0, 32, 0.7);
+            border-color: rgba(128, 0, 32, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Aletheia</a>
+            <div class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar">
+                <button class="btn btn-outline-light" type="button"><i class="bi bi-search"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="mb-3">MOOC DE MITOLOGÍA GRIEGA</h1>
+                <p class="text-muted">Aquí podrás aprender todo lo relacionado con la mitología griega, muy vigente
+                    su
+                    importancia en la actualidad</p>
+
+                <div class="hero-section mb-4">
+                    <div class="video-container">
+                        <iframe src="https://youtu.be/bzfG5LR0jWI?si=9yGgz6ZtSPdD4Nb7" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <a href="modulo.html">
+                <div class="col-lg-4">
+                    <h3 class="mb-4">MÓDULOS</h3>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="module-card card">
+                                <img src="imagenes/1.jpg" class="card-img-top" alt="Origen de los Dioses">
+                                <div class="card-body">
+
+                                    <h5 class="card-title">El inicio de todo</h5>
+                                </div>
+                            </div>
+                        </div>
+            </a>
+            <a href="modulo.html">
+                <div class="col-12">
+                    <div class="module-card card">
+                        <img src="imagenes/2.jpg" class="card-img-top" alt="Mitos de Origen">
+                        <div class="card-body">
+                            <h5 class="card-title">Los Dioses del Olimpo</h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="modulo.html">
+                <div class="col-12">
+                    <div class="module-card card">
+                        <img src="imagenes/3.jpg" class="card-img-top" alt="Dioses del Olimpo">
+                        <div class="card-body">
+                            <h5 class="card-title">Tragedias de en la Mitología</h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="modulo.html">
+                <div class="col-12">
+                    <div class="module-card card">
+                        <img src="imagenes/4.jpg" class="card-img-top" alt="Héroes y Criaturas Míticas">
+                        <div class="card-body">
+                            <h5 class="card-title">Mitos de la antigua grecia</h5>
+                        </div>
+                    </div>
+            </a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
