@@ -18,4 +18,5 @@ Esta página tiene una página de preguntas y respuestas centrada en la "Titanom
 Título: "La Titanomaquia - Examen"
 Sección de contenido: muestra un video sobre la Titanomaquia y un cuadro de texto desplazable con contenido continuo (posibles preguntas y opciones de respuesta). Esta sección puede cambiar dinámicamente según la interacción del usuario.
 
+https://www.figma.com/design/vPMmxa15BCaWqERYBuwNBr/trabajo-final-de-ana?node-id=0-1&t=848NaQvnOpb46f5f-1
 
