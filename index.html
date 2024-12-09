@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando la Mitología</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, rgb(255, 255, 255), #800000);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .main-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+        }
+
+        .title {
+            color: #2b0000;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .dropdown-menu {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-start {
+            background: linear-gradient(to right, #ff6b6b, #4ecdc4);
+            border: none;
+            color: rgb(80, 80, 80);
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-start:hover {
+            transform: translateY(-2px);
+        }
+
+        .logo {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+        }
+
+        .dropdown-item {
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover {
+            background-color: #0080ff;
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-card">
+            <h1 class="title">Explorando la Mitología</h1>
+            <p class="description">
+                Embárcate en un viaje fascinante a través de las leyendas y mitos que han dado forma a las
+                civilizaciones.
+                Descubre dioses, héroes y criaturas míticas que han cautivado la imaginación humana durante milenios.
+            </p>
+
+            <div class="dropdown">
+                <button class="btn btn-start dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Inicion de Modulo
+                </button>
+                <a href="modulo.html">
+                    <ul class="dropdown-menu">
+                </a>
+                <li><a class="dropdown-item" href="modulo.html">
+                        <i class="fas fa-sun me-2"></i>El inicio de todo
+                    </a></li>
+                <li><a class="dropdown-item" href="modulo.html">
+                        <i class="fas fa-bolt me-2"></i>Los Dioses del Olimpo
+                    </a></li>
+                <li><a class="dropdown-item" href="modulo.html">
+                        <i class="fas fa-dragon me-2"></i>Criaturas Mitológicas
+                    </a></li>
+                <li><a class="dropdown-item" href="modulo.html">
+                        <i class="fas fa-shield-alt me-2"></i>Héroes y Semidioses
+                    </a></li>
+                <li><a class="dropdown-item" href="modulo.html">
+                        <i class="fas fa-heart me-2"></i>Tragedias de en la Mitología
+                    </a></li>
+                <li><a class="dropdown-item" href="modulo.html">
+                        <i class="fas fa-theater-masks me-2"></i>Mitos de la antigua grecia
+                    </a></li>
+                </ul>
+            </div>
+            <img src="imagenes/Recurso 1Aletheia.png" alt="Logo Aletheia" class="logo" href="#">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+</body>
+
+</html>
