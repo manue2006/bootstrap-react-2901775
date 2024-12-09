@@ -238,12 +238,13 @@
                             </label>
                         </div>
 
-                        <div class="text-center mt-4">
-                            
+                        <div class="text-center mt-4">    
+                            <a href="entrada.html">
                             <button type="submit" class="btn btn-submit">Verificar Respuestas</button>
+                        </a>
                         </div>
                     </form>
-
+   
                     <div class="result-message" id="results"></div>
                 </div>
             </div>
@@ -316,10 +317,10 @@
                 </div>
             `;
 
-            // Scroll to results
+      
             resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-            // Disable all inputs after submission
+          
             document.querySelectorAll('input[type="radio"]').forEach(input => {
                 input.disabled = true;
             });
